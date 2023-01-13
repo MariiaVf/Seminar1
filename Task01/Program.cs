@@ -6,10 +6,10 @@
 // a = 9, b = -3 -> да 
 // a = -3 b = 9 -> нет
 
-Console.WriteLine ("Введите число1: ");
+Console.WriteLine("Введите число1: ");
 int number1 = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine ("Введите число2: ");
+Console.WriteLine("Введите число2: ");
 int number2 = Convert.ToInt32(Console.ReadLine());
 
 if (number1 / number2 == number2)
