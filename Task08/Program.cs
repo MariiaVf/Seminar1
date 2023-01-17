@@ -13,12 +13,8 @@ if (number > 0)
         Console.Write($"{count} ");
         count++;
     }
-    if ((number % 2) == 0)
-    {
-        Console.WriteLine($"Число {number} является четным");
-    }
 }
 else
 {
-    Console.WriteLine($"Число {number} не является натуральным");
+    Console.WriteLine("Введено не натуральное число");
 }
