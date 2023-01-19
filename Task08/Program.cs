@@ -5,16 +5,11 @@
 
 Console.WriteLine("Введите число: ");
 int number = Convert.ToInt32(Console.ReadLine());
-if (number > 0)
+if (number % 2 == 0)
 {
-    int count = 1;
-    while (count <= number)
-    {
-        Console.Write($"{count} ");
-        count++;
-    }
+    Console.WriteLine($"Число {number} является четным");
 }
 else
 {
-    Console.WriteLine("Введено не натуральное число");
+    Console.WriteLine($"Число {number} не является четным");
 }
