@@ -9,13 +9,16 @@
 
 Console.Write("Введите трехзначное число: ");
 int number = Convert.ToInt32(Console.ReadLine());
+while (100 > number || 1000 < number) 
+{
+    Console.Write("Введено не трехзначное число");
+    number = Convert.ToInt32(Console.ReadLine());
+}
 
 int GetNumber(int number)
 {
-    int newNumber = ((number % 100)-(number % 10))/10;
-
-    int result = newNumber;
-    return result;
+    int newNumber = number / 10 % 10;
+    return newNumber;
 }
 
 int finishNumber = GetNumber(number);
